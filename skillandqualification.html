@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
+
+<style>
+body {
+    background-color: #c2b5b5;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  header {
+    background: plum;
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+
+  .skills-container, .circular-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Horizontal Skill Bars */
+  .skill {
+    width: 300px;
+    margin: 10px 0;
+  }
+  .skill-name {
+    text-align: left;
+  }
+  .skill-bar {
+    width: 100%;
+    background-color: #333;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .skill-bar-fill {
+    height: 100%;
+    background-color: #f43c3c;
+    width: 0;
+  }
+
+  /* Circular Progress */
+  .circular {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 8px solid #333;
+    position: relative;
+    margin: 20px;
+  }
+  .circular:before {
+    content: attr(data-label);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d2dadb;
+    font-size: 16px;
+  }
+  .circular-fill {
+    border: 8px solid #cadcde;
+    border-top: 8px solid transparent;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+  .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .column {
+            flex: 0 1 calc(50% - 20px); /* Lebar setiap kad */
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #ddd;
+            background: #fff;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .icon-wrapper {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 10px;
+        }
+
+        .icon-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%; /* Menjadikan gambar bulat */
+        }
+
+</style>
+
+<link rel="stylesheet" href="skill.css"/>
+
+<link rel="stylesheet" href="https://unpkg.com/boxicon@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+  <header>
+
+  </h1>SKILLS & QUALIFICATION</h1><br>
+</header>
+
+    <section id="skills">
+        <div class="skill-category">
+          <br><h2>LANGUAGES</h2>
+          <div class="skills-container">
+            <div class="skill">
+              <p class="skill-name">MALAY (NATIVE) (95%)</p>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+        
+            <div class="skill">
+              <p class="skill-name">ENGLISH (75%)</p>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+
+          <div class="skill-category">
+            <br><h2>SOFT SKILLS</h2>
+
+            <div class="circular-container">
+              <div class="circular" data-label="90% Creativity" style="--percent: 90;">
+                <div class="circular-fill"></div>
+              </div>
+              <div class="circular" data-label="80% Leadership" style="--percent: 80;">
+                <div class="circular-fill"></div>
+              </div>
+              <div class="circular" data-label="75% Problem Solving" style="--percent: 75;">
+                <div class="circular-fill"></div>
+              </div>
+              <div class="circular" data-label="85% Communication" style="--percent: 85;">
+                <div class="circular-fill"></div>
+              </div>
+            </div>
+
+    <section id="skills">
+            <br><h2> SOFTWARE <br></h2>
+            
+            <div class="row">
+              <div class="column">
+                <div class="icon-wrapper">
+                <img src="word.png" alt="Word">
+              </div>
+              <h3>Microsoft Word</h3>
+              </div>
+              
+              <div class="column">
+                <div class="icon-wrapper">
+                  <img src="powerpoint.png" alt="PowerPoint">
+                </div>
+                <h3>Microsoft PopwerPoint</h3>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="icon-wrapper">
+                  <img src="excel.png" alt="Excel">
+                </div>
+                <h3>Microsoft Excel</h3>
+              </div>
+              
+              <div class="column">
+                <div class="icon-wrapper">
+                  <img src="photoshop.png" alt="Adobe Photoshop">
+                  </div>
+                  <h3>Adobe Photoshop</h3>
+              </div>
+                 
+               <div class="column">
+                  <div class="icon-wrapper">
+                    <img src="illustrator.png" alt="Adobe Illustrator">
+                    </div>
+                    <h3>Adobe Illustrator</h3>
+                </div>
+            
+                <div class="column">
+                    <div class="icon-wrapper">
+                      <img src="cnva.jpg" alt="Canva">
+                      </div>
+                      <h3>Canva</h3>
+                </div>
+
+                <div class="column">
+                    <div class="icon-wrapper">
+                      <img src="capcut.png" alt="CapCut">
+                      </div>
+                      <h3>CapCut</h3>
+                </div>  
+        </div>
+    </section>
+
+</body>
+</html>

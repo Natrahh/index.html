@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <style>
+
+    /* Gaya untuk menu navigasi */
+ .body {
+      font-family: 'Courier New', Courier, monospace ;
+      margin: 0;
+      line-height: 1.6;
+      background-color: #6e2566;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .navbar {
+  overflow: hidden;
+  background-color: #46043d;
+}
+
+.navbar a {
+  float:left;
+  margin-right: 20px;
+  font-size: 18px;
+  color: rgb(241, 227, 227);
+  text-align: left;
+  padding: 16px 14px;
+  text-decoration:double;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: #ddd;
+  text-align:left;
+  padding: 16px 14px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  padding: 16px 14px;
+  background-color: inherit;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(225, 138, 215);
+
+}
+
+.dropdown-content {
+  display: none;
+  position:fixed;
+  background-color: #ee86e7;
+  min-width: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    .slides {
+      display: flex;
+      width: 100%;
+    }
+    .slides img {
+      width: 150%;
+      height: 100vh;
+      z-index: 1;
+    }
+
+ .circle-image {
+      width: 300px; /* Lebar gambar */
+      height: 300px; /* Tinggi gambar */
+      border-radius: 50%; /* Jadikan gambar bulat */
+      border: 5px solid #333; /* Border */
+      overflow: hidden; /* Elakkan gambar terkeluar */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 450px;
+      margin-bottom: 20px;
+    }
+
+    /* Gambar dalam container bulat */
+    .circle-image img {
+      width: 100%; /* Pastikan gambar ikut saiz container */
+      height: 100%; /* Sama dengan tinggi container */
+      object-fit: cover; /* Pastikan gambar sesuai dalam bentuk bulat */
+    }
+
+/* Main Content */
+    .banner {
+      text-align: center;
+      background: #cccccc;
+      color: #fff;
+      padding: 200px;
+    }
+    .content {
+      max-width: 500px;
+      margin-left: 330px;
+      padding: 20px;
+      box-shadow: 4px 5px 10px ;
+    }
+    .content {
+      margin-bottom: 50px;
+    }
+
+h1 {
+  font-family: 'Courier New',  Courier, monospace;
+  text-align: center;
+  text-transform: uppercase;
+  color: #520953;
+}
+
+p {
+  font-family:"Lora" , serif;
+  text-indent: 25px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+  footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Social icons container */
+    .social-icons {
+      margin-bottom: 5px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin:15px;
+    }
+
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="chatgpt2.html">Home</a>
+    <div class="dropdown">
+      <div class="dropdown-btn">About Me
+        <i class="fa fa-caret-down"></i>
+      </div>
+        <div class="dropdown-content">
+            <a href="family.html">Family</a>
+            <a href="friends.html">Friends</a>
+            <a href="hobbies.html">Hobbies</a>
+        </div>
+    </div>
+    <a href="education.html">Education</a>
+    <a href="skillandqualification.html">Skill & Qualification</a>
+  </nav>
+  </div>
+  
+  <!-- Slider Gambar -->
+    <div class="slides">
+      <img src="slider2.jpg" alt="Image 1">
+    </div>
+
+  
+<br>
+<div class="circle-image">
+   <img src="circle border.jpg" alt=" My profile">
+</div>
+ 
+<!-- Main Content -->
+  <main>
+    
+    <section class="content">
+        <h1> Welcome to my personal website </h1>
+        <p>Hi! My name is Nurul Natrah binti Mad Nooh. I study at     Universiti Teknologi MARA in the Diploma of Information Management currently in Semester 5. This website will display details about my personal life including my family, friends and others. Enjoys!!!</p>
+    </section>
+
+<footer>
+  <p>&copy; 2024 Natrah's. All Rights Reserved.</p>
+ 
+  <div class="social-icons">
+    <a href="https://www.tiktok.com/@nrlnatrahh?_t=ZS-8rtOFa5eDtx&_r=1" target="_blank"><img src="tiktok icon.jpg" alt="TikTok"></a>
+    <a href="https://wa.me/qr/UEAIPW5BHQYYA1" target="_blank"><img src="whatsapp icon.jpg" alt="WhatsApp"></a>
+    <a href="https://instagram.com" target="_blank"><img src="instagram icon.jpg" alt="Instagram"></a>
+  </div>
+
+
+</footer>
+
+
+</body>
+</html>

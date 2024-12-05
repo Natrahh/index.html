@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 20;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 100%;
+    padding: 0 1cm 1cm 1cm;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    padding: 2cm 1.5cm;
+    background: linear-gradient(#a57b7b 50%, #a57b7b 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h3 { 
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+    margin: 1cm 0;
+}
+
+p { 
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03cm;
+}
+
+.icon-wrapper {
+    background-color: #f9aafe;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5cm;
+    width: 2.5cm;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: 0 2cm;
+    }
+    
+    .column {
+        flex: 0 50%;
+        min-width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1cm 3cm;
+    }
+    
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.skills-container, .circular-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+/* Horizontal Skill Bars */
+.skill {
+  width: 300px;
+  margin: 10px 0;
+}
+.skill-name {
+  text-align: left;
+}
+.skill-bar {
+  width: 100%;
+  background-color: #333;
+  height: 10px;
+  border-radius: 1px;
+  overflow: hidden;
+}
+.skill-bar-fill {
+  height: 100%;
+  background-color: #f84545;
+  width: 0;
+}
+
+/* Circular Progress */
+.circular {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid #333;
+  position: relative;
+  margin: 20px;
+}
+.circular:before {
+  content: attr(data-label);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 18px;
+}
+.circular-fill {
+  border: 8px solid #ff2937;
+  border-top: 8px solid transparent;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform: rotate(10deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(calc(var(--percent) * 3.6deg));
+  }
+}
